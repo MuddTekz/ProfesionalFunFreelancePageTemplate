@@ -1,0 +1,135 @@
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Soft background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.testimonials h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.testimonial-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonials h1 {
+    color: #ffcc00;
+}
+
+.testimonial-card h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.testimonial-card h3 {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffcc00;
+    color: #222;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.footer {
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1rem;
+    width: 100%;
+    position: relative; /* Ensure it's placed properly */
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.footer p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-top: 15px;
+}

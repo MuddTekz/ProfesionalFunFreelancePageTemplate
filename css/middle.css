@@ -1,0 +1,95 @@
+.containerMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 105vh;
+    background-color: #0a0a23;
+    list-style: none;
+}
+
+@layer demo {
+    .highlighted-text-shadow {
+      text-shadow:
+        /* regular text-shadow */
+        0 .15ch 15px var(--shadow),
+        /* text-shadow highlight */
+        0 -2px 0 var(--highlight);
+    }
+  }
+  
+  @layer demo.support {
+    :root {
+      --hue: 91.13; /* change me */
+      --bg: oklch(35% .3 var(--hue));
+      --text: oklch(85% .1 var(--hue));
+      --shadow: oklch(35% .2 var(--hue));
+      --highlight: oklch(98% .05 var(--hue));
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    .containerLM {
+      block-size: 100%;
+      color: var(--text);
+    }
+  
+    .containerLM {
+      min-block-size: 100%;
+      font-family: system-ui, sans-serif;
+      align-items: center;
+      position: absolute;
+      margin-top: -450px;
+      display: grid;
+      place-content: center;
+      gap: 10vh;
+    }
+    
+    .containerLM h1 {
+      font-size: 6vi;
+      letter-spacing: -.15ch;
+      line-height: .75;
+    }
+   
+  }
+
+  .services {
+    margin-top: 150px;
+    width: 80%;
+  }
+
+  .services h1 {
+    font-size: 2.5rem;
+    color: #f4e803ea;
+    margin-bottom: 20px;
+  }
+
+  .services p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .services li {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .services {
+      width: 100%;
+    }
+    .services h1 {
+      font-size: 2rem;
+    }
+    .services p {
+      font-size: 1rem;
+    }
+    .services li {
+      font-size: 1rem;
+    }
+  }
