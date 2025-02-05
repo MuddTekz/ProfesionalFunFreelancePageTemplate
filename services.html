@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PXL Web Solutions - Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/bottom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <style>
+        @layer demo {
+    .highlighted-text-shadow {
+      text-shadow:
+        /* regular text-shadow */
+        0 .15ch 15px var(--shadow),
+        /* text-shadow highlight */
+        0 -2px 0 var(--highlight);
+    }
+  }
+  
+  @layer demo.support {
+    :root {
+      --hue: 91.13; /* change me */
+      --bg: oklch(35% .3 var(--hue));
+      --text: oklch(85% .1 var(--hue));
+      --shadow: oklch(35% .2 var(--hue));
+      --highlight: oklch(98% .05 var(--hue));
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    .containerLM {
+      block-size: 100%;
+      color: var(--text);
+    }
+  
+    .containerLM {
+      min-block-size: 100%;
+      font-family: system-ui, sans-serif;
+      align-items: center;
+      margin-top: 10vh;
+      position: relative;
+      display: grid;
+      place-content: center;
+      gap: 10vh;
+    }
+    
+    .containerLM h1 {
+      font-size: 6vi;
+      letter-spacing: -.15ch;
+      line-height: .75;
+    }
+   
+  }
+    </style>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><i class="fa-solid fa-helmet-safety"></i> PXL Web Solutions</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-plug"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><button id="dark-mode-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+    <header>
+        <div class="containerLM">
+            <h1 class="highlighted-text-shadow">
+                OUR SERVICES.<br>
+              </h1>
+            </div>
+    </header>
+    <div class="service-container">
+        <!-- Service Card 1: Web Design -->
+        <div class="service-card">
+            <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?t=st=1738770565~exp=1738774165~hmac=af3353d7d157c99006661c30ec328951dc52580c22cd17efaa4a0c09a8babada&w=740" alt="Web Design" class="service-image">
+            <h2>Web Design</h2>
+            <p>Create stunning and user-friendly websites tailored to your business needs.</p>
+            <button class="dropdown-btn"><i class="fa-solid fa-angles-down"></i>View Packages</button>
+            <div class="dropdown-content">
+                <div class="package"><h3>Basic</h3><p>$199 - One-page website.</p></div>
+                <div class="package"><h3>Pro</h3><p>$499 - Full custom website.</p></div>
+                <div class="package"><h3>Premium</h3><p>$999 - E-commerce & SEO optimized.</p></div>
+            </div>
+        </div>
+    
+        <!-- Service Card 2: SEO Optimization -->
+        <div class="service-card">
+            <img src="https://img.freepik.com/premium-vector/search-engine-optimization-seo-marketing-strategy-digital-marketing-keyword-ranking_530733-2929.jpg?w=826" alt="SEO Optimization" class="service-image">
+            <h2>SEO Optimization</h2>
+            <p>Improve your site’s visibility and organic traffic with expert SEO strategies.</p>
+            <button class="dropdown-btn"><i class="fa-solid fa-angles-down"></i>View Packages</button>
+            <div class="dropdown-content">
+                <div class="package"><h3>Basic SEO</h3><p>$99 - On-page SEO & keyword optimization.</p></div>
+                <div class="package"><h3>Pro SEO</h3><p>$299 - On-page & off-page SEO, backlinks.</p></div>
+                <div class="package"><h3>Premium SEO</h3><p>$599 - Full SEO audit, local SEO, and more.</p></div>
+            </div>
+        </div>
+    
+        <!-- Service Card 3: E-Commerce Development -->
+        <div class="service-card">
+            <img src="https://img.freepik.com/free-vector/online-shopping-concept-illustration_114360-1428.jpg?t=st=1738771308~exp=1738774908~hmac=437d2897644559259d7304bba4afa698c776f8c23caa2e27ba915a6ffb9741ef&w=740" alt="E-commerce Development" class="service-image">
+            <h2>E-Commerce Development</h2>
+            <p>Build fully-functional and customizable online stores for your business.</p>
+            <button class="dropdown-btn"><i class="fa-solid fa-angles-down"></i>View Packages</button>
+            <div class="dropdown-content">
+                <div class="package"><h3>Basic</h3><p>$499 - Single product store.</p></div>
+                <div class="package"><h3>Pro</h3><p>$799 - Multi-product store with payment gateways.</p></div>
+                <div class="package"><h3>Premium</h3><p>$1499 - Full e-commerce website with custom features.</p></div>
+            </div>
+        </div>
+    
+        <!-- Service Card 4: Branding -->
+        <div class="service-card">
+            <img src="https://img.freepik.com/free-vector/brand-name-innovation-marketers-team-corporate-branding-designers-teamwork-company-identity-creating-development-design-element-concept-illustration_335657-2017.jpg?t=st=1738771678~exp=1738775278~hmac=abc32a7916069f8ccb3eb9eee8e0b1cf62a72dcdf3cf054a2fdc5cbbcb1e32bc&w=740" alt="Branding" class="service-image">
+            <h2>Branding</h2>
+            <p>Design unique and professional brand identities that resonate with your audience.</p>
+            <button class="dropdown-btn"><i class="fa-solid fa-angles-down"></i>View Packages</button>
+            <div class="dropdown-content">
+                <div class="package"><h3>Logo Design</h3><p>$149 - Custom logo design.</p></div>
+                <div class="package"><h3>Brand Kit</h3><p>$399 - Logo, color palette, and typography guidelines.</p></div>
+                <div class="package"><h3>Premium Branding</h3><p>$799 - Full branding package with logos, social media design, etc.</p></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header>
+        <div class="containerLM">
+            <h1 class="highlighted-text-shadow">
+                PROCESS/PAYMENTS.<br>
+              </h1>
+            </div>
+    </header>
+    <section class="process-section">
+        <div class="process-steps">
+            <div class="process-step">
+                <i class="fa-solid fa-check-circle"></i>
+                <h3>Choose</h3>
+                <p>Choose your product and define your requirements with our team.</p>
+            </div>
+            <div class="process-step">
+                <i class="fa-solid fa-cogs"></i>
+                <h3>Development Stage</h3>
+                <p>We develop your product with precision, ensuring it meets your expectations.</p>
+            </div>
+            <div class="process-step">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Pay</h3>
+                <p>Make the payment securely and easily through our payment gateway.</p>
+            </div>
+            <div class="process-step">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Delivery</h3>
+                <p>Receive your product within 1-3 working days. We ensure timely delivery!</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>LEAVE A <i class="fa-solid fa-star"></i></h2>
+            <p>All likes are appreciated. </p>
+            
+            <br>
+            <br>
+
+            <div class="social-links">
+                <a href="https://github.com/MuddTekz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            
+            <p>Designed & Developed by <a href="https://github.com/MuddTekz" target="_blank">MuddTekz</a></p>
+            <p class="copyright">© 2024 PXL Web Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script src="js/services.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

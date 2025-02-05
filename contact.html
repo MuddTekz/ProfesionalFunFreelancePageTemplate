@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PXL Web Solutions - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <style>
+        @layer demo {
+    .highlighted-text-shadow {
+      text-shadow:
+        /* regular text-shadow */
+        0 .15ch 15px var(--shadow),
+        /* text-shadow highlight */
+        0 -2px 0 var(--highlight);
+    }
+  }
+  
+  @layer demo.support {
+    :root {
+      --hue: 91.13; /* change me */
+      --bg: oklch(35% .3 var(--hue));
+      --text: oklch(85% .1 var(--hue));
+      --shadow: oklch(35% .2 var(--hue));
+      --highlight: oklch(98% .05 var(--hue));
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    .containerLM {
+      block-size: 100%;
+      color: var(--text);
+    }
+  
+    .containerLM {
+      min-block-size: 100%;
+      font-family: system-ui, sans-serif;
+      align-items: center;
+      margin-top: 10vh;
+      position: relative;
+      display: grid;
+      place-content: center;
+      gap: 10vh;
+    }
+    
+    .containerLM h1 {
+      font-size: 6vi;
+      letter-spacing: -.15ch;
+      line-height: .75;
+    }
+   
+  }
+    </style>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><i class="fa-solid fa-helmet-safety"></i> PXL Web Solutions</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-plug"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><button id="dark-mode-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+    <header>
+        <div class="containerLM">
+            <h1 class="highlighted-text-shadow">
+                CONTACT FORM.<br>
+              </h1>
+            </div>
+    </header>
+    <section class="contact-form-section">
+        <div class="form-container">
+            <p><i class="fa-solid fa-at"></i>Email for enquiries</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button"><i class="fa-solid fa-comment-dollar"></i>Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>LEAVE A <i class="fa-solid fa-star"></i></h2>
+            <p>All likes are appreciated. </p>
+
+            <div class="social-links">
+                <a href="https://github.com/MuddTekz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <p>Designed & Developed by <a href="https://github.com/MuddTekz" target="_blank">MuddTekz</a></p>
+            <p class="copyright">© 2024 PXL Web Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>
